@@ -6,7 +6,7 @@ const Navbar= ()=> {
     return(
         <>
             <nav className="navbar  navbar-expand-lg  navbar-dark bg-dark sticky-top">
-                <div className="container-fluid ">
+                <div className="container ">
                     <a className="navbar-brand text-white" href="#">Start Boostrap</a>
                     <form className="d-flex  ">
                         <button className="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

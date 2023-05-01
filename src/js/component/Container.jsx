@@ -1,11 +1,16 @@
 import React from "react";
 import Jumbotron from "./Jumbotron.jsx"
-//import Card from "./Card.jsx"
+import CardsGroup from "./CardsGroup.jsx";
+
 
 const Container =()=>{
     return(
         <>
-        <Jumbotron/>
+        <div className="container">
+            <Jumbotron/>
+            <CardsGroup/>
+        </div>
+        
         </>
     )
 }
