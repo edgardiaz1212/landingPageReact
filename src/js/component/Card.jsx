@@ -1,17 +1,23 @@
 import React from "react";
-const cardStyle = {width:" 18rem "}
 
-const Card = () => {
+
+
+
+const Card = (props) => {
+  const cardStyle = {width:" 18rem "}
   return (
-    <>
+    <>    
         <div className="col-sm-3">
-          <div className="card" style={cardStyle} >
-            <img src="..." className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" className="btn btn-primary">Go somewhere</a>
+          <div className="card h-100" style={cardStyle} >
+            <img src={props.imageURL} className="card-img-top" alt="..." />
+            <div className="card-body text-center">
+              <h5 className="card-title">{props.cardTitle}</h5>
+              <p className="card-text">{props.description}</p>
+              
             </div>
+            <div className="card-footer text-center p-3">
+        <small className="text-body-secondary "> <a href={props.buttonURL} className="btn btn-primary ">Find out more!</a> </small>
+      </div>
           </div>
         </div>
     </>
